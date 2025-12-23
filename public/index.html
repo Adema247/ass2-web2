@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global User Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Global User Explorer</h1>
+            <p>Generate random user data with real-time country info and news.</p>
+            <button id="fetchBtn">Generate Random User</button>
+        </header>
+
+        <main id="content" class="hidden">
+            <section class="info-grid">
+                <div id="userCard" class="card">
+                    </div>
+                <div id="countryCard" class="card">
+                    </div>
+            </section>
+
+            <section class="news-section">
+                <h2>Latest Headlines</h2>
+                <div id="newsGrid" class="news-grid">
+                    </div>
+            </section>
+        </main>
+        
+        <div id="loader" class="hidden">Fetching data...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
